@@ -1,20 +1,38 @@
-# CrewAI Travel Planning System
+# CrewAI Tutorial Series
 
-This project demonstrates an advanced implementation of CrewAI for automated travel planning. It uses multiple AI agents working together to research and create personalized travel itineraries.
+This repository contains a comprehensive tutorial series on building AI applications using CrewAI. Each day focuses on different aspects of CrewAI, gradually building up to a complete travel planning system.
 
-## Features
+## Tutorial Structure
 
-- Research Analyst agent that gathers travel information
-- Travel Advisor agent that creates personalized recommendations
-- Custom tools for:
-  - Weather information
-  - Date/time operations
-  - Budget calculations
+### Day 1: Basic Setup and Introduction
+- Basic CrewAI concepts
+- Simple agent creation
+- Basic task execution
+- OpenAI integration
+
+### Day 2: Tools Integration
+- Custom tool creation
+- Tool integration with agents
+- Basic error handling
+- Utility functions
+
+### Day 3: Enhanced Agents
+- Multiple agent coordination
+- Advanced task delegation
+- Context sharing between agents
+- Gemini AI integration
+
+### Day 4: Complete Travel Planner
+- Full-featured travel planning system
+- Multiple tools and agents working together
+- Advanced error handling
+- Production-ready implementation
 
 ## Prerequisites
 
 - Python 3.8 or higher
-- Gemini API key
+- OpenAI API key (for Day 1)
+- Gemini API key (for Days 3-4)
 
 ## Installation
 
@@ -29,36 +47,47 @@ cd crew-ai-tutorial
 pip install -r requirements.txt
 ```
 
-3. Create a `.env` file in the project root and add your API key:
-```
-GEMINI_API_KEY=your_api_key_here
-```
-
-## Usage
-
-Run the enhanced travel planning system:
+3. Set up environment variables:
 ```bash
-python enhanced_main.py
+cp .env.example .env
+# Edit .env with your API keys
 ```
 
-The system will:
-1. Research travel conditions for New York City
-2. Calculate budget information
-3. Generate a detailed 3-day travel itinerary
+## Getting Started
+
+Each day's tutorial is contained in its own directory with a complete README and example code:
+
+1. Start with `day1/` to learn the basics
+2. Move on to `day2/` to understand tool integration
+3. Progress to `day3/` for advanced agent concepts
+4. Finally, explore `day4/` for the complete travel planner
 
 ## Project Structure
 
-- `enhanced_main.py`: Main script that orchestrates the AI agents
-- `tools.py`: Custom tools used by the agents
-- `requirements.txt`: Project dependencies
-- `.env`: Environment variables (not tracked in git)
-
-## Error Handling
-
-The system includes robust error handling for:
-- Missing API keys
-- Invalid tool inputs
-- Runtime exceptions
+```
+crew-ai-tutorial/
+├── day1/
+│   ├── basic_setup/
+│   │   ├── simple_openai.py
+│   │   └── README.md
+├── day2/
+│   ├── tools_integration/
+│   │   ├── tools.py
+│   │   ├── basic_tools_demo.py
+│   │   └── README.md
+├── day3/
+│   ├── enhanced_agents/
+│   │   ├── multi_agent_demo.py
+│   │   ├── simple_gemini.py
+│   │   └── README.md
+├── day4/
+│   ├── travel_planner/
+│   │   ├── enhanced_main.py
+│   │   ├── tools.py
+│   │   └── README.md
+├── requirements.txt
+└── .env.example
+```
 
 ## Contributing
 
